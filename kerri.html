@@ -1,0 +1,1855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Nunito, sans-serif;
+        }
+
+        .main1 {
+            width: 100%;
+            height: 730px;
+            /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.704)), url(./header-bg.jpg); */
+            
+            animation: header1;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            padding: 1px;
+        }
+
+        @keyframes header1 {
+            0% {
+                background:linear-gradient( 0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.697) ),  url(./header-bg.jpg);
+                background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+
+            50% {
+                background-image: url(./header-bg2.jpg);
+                background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+
+            }
+
+            100% {
+                background-image: url(./header-bg3.jpg);
+                background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            }
+        }
+
+
+        .navbar {
+            width: 100%;
+            height: 120px;
+
+        }
+
+        .logo {
+            width: 150px;
+            height: 80px;
+
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+
+        .logo1 {
+            width: 60px;
+            height: 30px;
+        }
+
+        .nav {
+            width: 700px;
+            height: 80px;
+
+            margin-left: 800px;
+            margin-top: -80px;
+        }
+
+        .nav ul {
+            list-style: none;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+            font-size: 15px;
+            font-weight: 500;
+
+        }
+
+        .nav ul li a {
+            color: rgb(246, 246, 246);
+            text-decoration: none;
+
+        }
+
+        .nav ul li a:hover{
+            color: rgb(230, 95, 120);
+        }
+
+        .welcom1 {
+            width: 650px;
+            height: 300px;
+
+            margin-left: 430px;
+            margin-top: 70px;
+        }
+
+        .wel1 {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 500;
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+
+
+        .heading-main{
+            width: 600px;
+            height: 60px;
+            margin: auto;
+            color: white;
+            position: relative;
+            /* background-color: aquamarine; */
+        }
+        .heading-main h1{
+            width: max-content;
+            position: absolute;
+            left: 50%;
+            opacity: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .h1{
+            animation: h1 15s linear infinite;
+        }
+
+        @keyframes h1 {
+            0%{
+                opacity: 1;
+            }
+            33%{
+                opacity: 1;
+            }
+            34%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+
+        }
+
+        .h2{
+            animation: h2 15s linear infinite;
+        }
+
+        @keyframes h2 {
+            0%{
+                opacity: 0;
+            }
+            33%{
+                opacity: 0;
+            }
+            34%{
+                opacity: 1;
+            }
+            66%{
+                opacity: 1;
+            }
+            67%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+
+        }
+
+
+        .h3{
+            animation: h3 15s linear infinite;
+        }
+
+        @keyframes h3 {
+            0%{
+                opacity: 0;
+            }
+            33%{
+                opacity: 0;
+            }
+            34%{
+                opacity: 0;
+            }
+            66%{
+                opacity: 0;
+            }
+            67%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+
+        }
+        
+        .heading-main h1 span{
+            animation: span 5s linear infinite;
+        }
+
+        @keyframes span {
+            0%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+
+
+
+
+
+        .wel12 {
+            color: rgb(255, 255, 255);
+            font-size: 54px;
+            font-weight: 500;
+            line-height: 64px;
+            margin-left: 50px;
+            font-style: Montserrat, sans-serif;
+        }
+
+        .wel3 {
+            font-style: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .down1 {
+            width: 200px;
+            height: 50px;
+            border: 3px solid white;
+            border-radius: 30px;
+            margin-top: 30px;
+            margin-left: 225px;
+        }
+
+        .down12 {
+            font-style: Nunito, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+        }
+
+        .anim1 {
+            width: 30px;
+            height: 50px;
+            border: 3px solid white;
+            border-radius: 20px;
+            margin-left: 740px;
+            margin-top: 100px;
+            animation-duration: 2s;
+            animation-name: ani1;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* animation-direction: alternate; */
+
+        }
+
+        .anim2 {
+            width: 1px;
+            height: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+
+
+        }
+
+        @keyframes ani1 {
+            0% {
+                margin-top: 100px;
+            }
+            55%{
+                margin-top: 70px;
+
+            }
+            75%{
+                margin-top: 100px;
+            }
+            90%{
+                margin-top: 80px;
+            }
+            100%{
+                margin-top: 100px;
+            }
+        }
+
+        .main2 {
+            width: 100%;
+            height: 4700px;
+
+        }
+
+        .about2 {
+            width: 1150px;
+            height: 420px;
+
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        .about21 {
+            width: 500px;
+            height: 400px;
+        }
+
+        .about22 {
+            width: 610px;
+            height: 400px;
+
+            margin-left: 530px;
+            margin-top: -403px;
+        }
+
+        .me2 {
+            font-style: Montserrat, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: rgb(33, 37, 41);
+
+        }
+
+        .hello2 {
+            color: rgb(33, 37, 41);
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+
+        .hello21 {
+            color: rgb(230, 95, 120);
+            font-size: 24px;
+            font-weight: 700;
+            margin-left: 70px;
+            margin-top: -27px;
+        }
+
+        .hello22 {
+            font-style: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 20px;
+            color: rgb(117, 129, 145);
+        }
+
+        #icon2 {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #icon21 {
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        #icon23 {
+            margin-left: 30px;
+            font-size: 20px;
+        }
+
+        #icon24 {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .our2 {
+            width: 600px;
+            height: 150px;
+
+            margin-left: 500px;
+            margin-top: 200px;
+        }
+
+        .service2 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .it2 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submain2 {
+            width: 1050px;
+            height: 300px;
+
+            margin-left: 280px;
+            margin-top: 100px;
+        }
+
+        .sub2 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .sub2:hover .line2{
+            width: 70px;
+        }
+        #graph2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+        }
+
+        .graphic2 {
+            margin-left: 80px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .line2 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin: auto;
+            margin-top: 10px;
+            transition:0.36s;
+        }
+
+        .there2 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sub21 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 350px;
+            margin-top: -280px;
+        }
+        .sub21:hover .line21{
+            width: 70px;
+        }
+
+        #cup2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+
+        }
+
+        .color2 {
+            margin-left: 80px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .line21 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin-top: 10px;
+            margin: auto;
+            transition: 0.36s;
+        }
+
+        .there21 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sub22 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 690px;
+            margin-top: -280px;
+        }
+        .sub22:hover .line22{
+            width: 70px;
+        }
+
+        #cloud2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+        }
+
+        .media2 {
+            margin-left: 80px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .line22 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin-top: 10px;
+            margin: auto;
+            transition: 0.36s;
+        }
+
+        .there22 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submain21 {
+            width: 1050px;
+            height: 300px;
+
+            margin-left: 280px;
+            margin-top: 30px;
+        }
+        .submain21:hover .linep2{
+            width: 70px;
+        }
+
+        .subm2 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        #wifi2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+        }
+
+        .unlimited2 {
+            margin-left: 80px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .linep2 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin-top: 10px;
+            margin: auto;
+            transition: 0.36s;
+        }
+
+        .are2 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .subm21 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 350px;
+            margin-top: -280px;
+        }
+        .subm21:hover .linep21{
+            width: 70px;
+        }
+
+        #design2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+        }
+
+        .res2 {
+            margin-left: 60px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .linep21 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin-top: 10px;
+            margin: auto;
+            transition: 0.36s;
+        }
+
+        .are21 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .subm22 {
+            width: 320px;
+            height: 280px;
+            border: 2px solid rgb(232, 232, 232);
+            margin-left: 690px;
+            margin-top: -280px;
+        }
+        .subm22:hover .linep22{
+            width: 70px;
+        }
+
+        #text2 {
+            margin-top: 30px;
+            margin-left: 120px;
+            font-size: 50px;
+        }
+
+        .easy2 {
+            margin-left: 60px;
+            margin-top: 20px;
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .linep22 {
+            width: 50px;
+            border: .5px solid rgb(230, 95, 120);
+            /* margin-left: 130px; */
+            margin-top: 10px;
+            margin: auto;
+            transition: 0.36s;
+        }
+
+        .are22 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .freelancer2 {
+            width: 600px;
+            height: 150px;
+
+            margin-left: 500px;
+            margin-top: 200px;
+        }
+
+        .free2 {
+            color: rgb(33, 37, 41);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .pink2 {
+            width: 120px;
+            height: 50px;
+            background-color: rgb(230, 95, 120);
+            margin-left: 250px;
+            margin-top: 30px;
+            border-radius: 5px;
+            padding: 1px;
+        }
+
+        .free21 {
+            color: rgb(255, 255, 255);
+            margin-left: 25px;
+            margin-top: 15px;
+            
+        }
+
+        .ourclient2 {
+            width: 600px;
+            height: 150px;
+
+            margin-left: 500px;
+            margin-top: 200px;
+        }
+
+        .ourclient21 {
+            color: rgb(33, 37, 41);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .ourclient22 {
+            color: rgb(156, 162, 152);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .point2 {
+            width: 750px;
+            height: 350px;
+
+            margin-top: 100px;
+            margin-left: 450px;
+
+        }
+
+        #fire2 {
+            font-size: 50px;
+            color: rgb(230, 95, 120);
+            margin-left: 350px;
+
+        }
+
+        .testi2 {
+            border-radius: 50px;
+            margin-top: px;
+            margin-left: px;
+        }
+
+        .fire3 {
+            margin-left: 320px;
+            margin-top: 30px;
+        }
+
+        .fire4 {
+            margin-top: 30px;
+            text-align: center;
+            color: rgb(108, 117, 125);
+            font-size: 18px;
+            font-weight: 400;
+            font-style: Nunito, sans-serif;
+        }
+
+        .ebony2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pinkline2 {
+            width: 20px;
+
+            border: .5px solid;
+            color: rgb(230, 95, 120);
+            margin-left: 350px;
+            margin-top: 20px;
+        }
+
+        .pinkline21 {
+            width: 20px;
+
+            border: .5px solid;
+            color: rgb(230, 95, 120);
+            margin-left: 380px;
+            margin-top: -2px;
+
+        }
+
+        .pinkline22 {
+            width: 20px;
+
+            border: .5px solid;
+            color: rgb(230, 95, 120);
+            margin-left: 410px;
+            margin-top: -1px;
+        }
+
+        .work2 {
+            width: 600px;
+            height: 150px;
+            margin-top: 150px;
+            margin-left: 530px;
+        }
+
+        .work21 {
+            color: rgb(33, 37, 41);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .work22 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            font-style: Nunito, sans-serif;
+            color: rgb(108, 117, 125);
+            margin-top: 30px;
+            text-align: center;
+
+        }
+
+        .all2 {
+            width: 1000px;
+            height: 600px;
+
+            margin-left: 300px;
+            margin-top: 150px;
+
+        }
+
+        .button2 {
+            width: 500px;
+            height: 70px;
+            /* border: 1px solid black; */
+            margin-left: 250px;
+            padding: 1px;
+        }
+         
+        .butn21{
+            background-color: rgb(230,95,120);
+            color: white;
+            width: 80px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .butn22{
+            width: 80px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .butn22:hover{
+            background-color: rgb(230,95,120);
+            color: white;
+            cursor: pointer;
+        }
+        .butn23{
+            width: 100px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+   
+        
+        }
+        .butn23:hover{
+            background-color: rgb(230,95,120);
+            color: white;
+            cursor: pointer;
+        }
+        .butn24{
+            width: 100px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .butn24:hover{
+            background-color: rgb(230,95,120);
+            color: white;
+            cursor: pointer;
+        }
+        .butn25{
+            width: 100px;
+            height: 40px;
+            border: none;
+            background-color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .butn25:hover{
+            background-color: rgb(230,95,120);
+            color: white;
+            cursor: pointer;
+        }
+
+        .imgp2 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .imgp21 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+
+        .imgp22 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .imgp23 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .imgp24 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .imgp25 {
+            width: 300px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .blog2 {
+            width: 600px;
+            height: 150px;
+            margin-top: 150px;
+            margin-left: 530px;
+            /* border: 1px solid black; */
+
+        }
+
+        .blog21 {
+            color: rgb(33, 37, 41);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+
+        }
+
+        .blog22 {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .blog3 {
+            width: 1200px;
+            height: 600px;
+            /* border: 1px solid black; */
+            margin-left: 150px;
+            margin-top: 100px;
+
+
+        }
+
+        .blog31 {
+            width: 350px;
+            height: 250px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .blog32 {
+            width: 350px;
+            height: 250px;
+            margin-left: 30px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .blog33 {
+            width: 350px;
+            height: 250px;
+            margin-left: 30px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .there3 {
+            width: 350px;
+            height: 250px;
+            /* border: 1px solid black; */
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .there31 {
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 700;
+            font-style: Montserrat, sans-serif;
+        }
+
+        .there32 {
+            color: rgb(108, 117, 125);
+            font: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+
+        .kerri33 {
+            color: rgb(230, 95, 120);
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 110px;
+            margin-top: -22px;
+        }
+
+        .sit3 {
+            margin-top: 20px;
+            font-style: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+
+        }
+
+        .sit4 {
+            width: 350px;
+            height: 250px;
+            /* border: 1px solid black; */
+            margin-left: 395px;
+            margin-top: -250px;
+        }
+
+        .sit41 {
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 700;
+            font-style: Montserrat, sans-serif;
+        }
+
+        .there42 {
+            color: rgb(108, 117, 125);
+            font: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+
+        .kerri43 {
+            color: rgb(230, 95, 120);
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 110px;
+            margin-top: -22px;
+        }
+
+        .sit44 {
+            margin-top: 20px;
+            font-style: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+        }
+
+        .sit5 {
+            width: 350px;
+            height: 250px;
+            /* border: 1px solid black; */
+            margin-left: 795px;
+            margin-top: -250px;
+        }
+
+        .sit51 {
+            color: rgb(33, 37, 41);
+            font-size: 20px;
+            font-weight: 700;
+            font-style: Montserrat, sans-serif;
+        }
+
+        .there52 {
+            color: rgb(108, 117, 125);
+            font: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: 15px;
+        }
+
+        .kerri53 {
+            color: rgb(230, 95, 120);
+            font-size: 16px;
+            font-weight: 700;
+            margin-left: 110px;
+            margin-top: -22px;
+        }
+
+        .sit54 {
+            margin-top: 20px;
+            font-style: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgb(108, 117, 125);
+        }
+
+        .sit34 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .sit45 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .sit55 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .main3 {
+            width: 100%;
+            height: 900px;
+
+
+        }
+
+        .contact3 {
+            width: 600px;
+            height: 150px;
+            /* border: 1px solid black; */
+            margin-left: 400px;
+        }
+
+        .cont3 {
+            color: rgb(33, 37, 41);
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .cont31 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .call3 {
+            width: 1000px;
+            height: 250px;
+            /* border: 1px solid black; */
+            margin-left: 200px;
+        }
+
+        .call31 {
+            width: 200px;
+            height: 150px;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+        }
+
+        #phone3 {
+            font-size: 50px;
+            color: rgb(239, 154, 169);
+            margin-left: 80px;
+        }
+
+        .on3 {
+            font-style: Montserrat, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .on31 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .email3 {
+
+            width: 200px;
+            height: 150px;
+            /* border: 1px solid black; */
+            margin-top: -150px;
+            margin-left: 370px;
+        }
+
+        #msg3 {
+            font-size: 50px;
+            color: rgb(239, 154, 169);
+            margin-left: 80px;
+        }
+
+        .email31 {
+            font-style: Montserrat, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .nmbr3 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .visit3 {
+            width: 200px;
+            height: 150px;
+            /* border: 1px solid black; */
+            margin-top: -150px;
+            margin-left: 730px;
+        }
+
+        #loc3 {
+            font-size: 50px;
+            color: rgb(239, 154, 169);
+            margin-left: 80px;
+        }
+
+        .loc31 {
+            font-style: Montserrat, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .loc32 {
+            color: rgb(108, 117, 125);
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .name31 {
+            width: 1100px;
+            height: 400px;
+            /* border: 1px solid black; */
+            margin-left: 150px;
+            margin-top: 10px;
+        
+        }
+
+        .your3 {
+            width: 530px;
+            height: 50px;
+            border: 2px solid rgb(224, 224, 224);
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        
+    
+
+        .your32 {
+            width: 530px;
+            height: 50px;
+            border: 2px solid rgb(224, 224, 224);
+            margin-left: 20px;
+            /* margin-top: -250px; */
+            
+
+        }
+
+        /* .your33 {
+            color: rgb(126, 147, 153);
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 20px;
+            margin-top: 15px;
+        } */
+
+        .subject3 {
+            width: 1085px;
+            height: 50px;
+            border: 2px solid rgb(224, 224, 224);
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+
+        /* .sub3 {
+            color: rgb(126, 147, 153);
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 20px;
+            margin-top: 15px;
+        } */
+
+        #msg31 {
+            width: 1085px;
+            height: 150px;
+            border: 2px solid rgb(224, 224, 224);
+            margin-left: 5px;
+            margin-top: 15px;
+        }
+
+        /* .msg32 {
+            color: rgb(126, 147, 153);
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 20px;
+            margin-top: 15px;
+        } */
+
+        .pinkt3 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(230, 95, 120);
+            border-radius: 5px;
+            margin-left: 940px;
+            margin-top: 20px;
+        }
+        .pinkt3:hover{
+            background-color: aqua;
+        }
+
+        .send3 {
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+
+        }
+        .send3:hover{
+            color: blueviolet;
+        }
+
+        .last {
+            background-color: rgb(33, 33, 33);
+            width: 100%;
+            height: 250px;
+            padding: 1px;
+        }
+
+        .icon4 {
+            width: 250px;
+            height: 60px;
+            /* border: 1px solid white; */
+            margin-left: 600px;
+            margin-top: 50px;
+        }
+        
+
+        .f3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(49, 49, 49);
+            border-radius: 30px;
+        }
+        .f3:hover{
+            background-color: aqua;
+        }
+        
+
+        #f31 {
+            font-size: 20px;
+            margin-left: 17px;
+            margin-top: 15px;
+            color: white;
+        }
+        #f31:hover{
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        .in3{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(49, 49, 49);
+            border-radius: 30px;
+            margin-left: 60px;
+            margin-top: -50px;
+        }
+        .in3:hover{
+            background-color: aqua;
+        }
+
+        #in31{
+            font-size: 20px;
+            margin-left: 17px;
+            margin-top: 15px;
+            color: white;
+        }
+        #in31:hover{
+            color: blueviolet;
+            cursor: pointer;
+        }
+
+        .pin3{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(49, 49, 49);
+            border-radius: 30px;
+            margin-left: 120px;
+            margin-top: -50px;
+        
+        }
+        .pin3:hover{
+            background-color: aqua;
+        }
+        #pin31{
+            font-size: 20px;
+            margin-left: 17px;
+            margin-top: 15px;
+            color: white;
+        }
+        #pin31:hover{
+            color: blueviolet;
+            cursor: pointer;
+        }
+        .twit3{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(49, 49, 49);
+            border-radius: 30px;
+            margin-left: 180px;
+            margin-top: -50px;
+        }
+        .twit3:hover{
+            background-color: aqua;
+        }
+
+
+
+        #twit32{
+            font-size: 20px;
+            margin-left: 17px;
+            margin-top: 15px;
+            color: white;
+        }
+        #twit32:hover{
+            color: blueviolet;
+        }
+        .fin3{
+            /* border: 1px solid white; */
+            width: 450px;
+            height: 50px;
+            margin-left: 500px;
+            margin-top: 10px;
+        }
+        .fin31{
+            color: rgb(171, 171, 171);
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+    <div class="main1">
+        <DIV class="navbar">
+            <div class="logo">
+                <img class="logo1" src="./logo.png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Client</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </DIV>
+        <div class="welcom1">
+            <p class="wel1">Welcome</p>
+           
+            <div class="heading-main">
+                <h1 class="h1">I'M <span>Kerri Deo</span></h1>
+                <h1 class="h2">I'M <span>Graphic Designer</span></h1>
+                <h1 class="h3">I'M <span>Photographer</span></h1>
+            </div>
+
+            <p class="wel3">It is a long established fact
+                that a reader will be of a page when <br>
+                established fact looking at its layout.</p>
+            <div class="down1">
+                <p class="down12">Download CV</p>
+            </div>
+        </div>
+        <div class="anim1">
+            <div class="anim2"></div>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="about2">
+            <img class="about21" src="./about.jpg" alt="">
+            <div class="about22">
+                <p class="me2">About Me</p>
+                <p class="hello2">Hello!</p>
+                <p class="hello21">I'M Kerri Deo.</p>
+                <p class="hello22">It is a long established fact
+                    that a reader will be distracted by the readable <br>
+                    content of a page when looking at its layout.
+                    <br> <br>
+
+                    The point of using Lorem Ipsum is that it has
+                    a more-or-less normal <br> distribution of letters,
+                    as opposed to using 'Content here, content
+                    here', <br> making it look like readable English.
+                    <br> <br>
+
+                    There are many variations of passages of
+                    Lorem Ipsum available, but the majority
+                    have suffered alteration in some form,
+                    by injected humour, or randomised words
+                    which don't look even slightly believable.
+
+                </p>
+                <i id="icon2" class="fa-solid fa-globe"></i>
+                <i id="icon21" class="fa-brands fa-facebook-f"></i>
+                <i id="icon23" class="fa-brands fa-linkedin-in"></i>
+                <i id="icon24" class="fa-brands fa-twitter"></i>
+            </div>
+
+        </div>
+
+        <div class="our2">
+            <p class="service2">Our Services</p>
+            <p class="it2">It is a long established
+                fact that a reader will be of a page
+                when <br> established fact looking at its layout.</p>
+        </div>
+
+        <div class="submain2">
+            <div class="sub2">
+                <i id="graph2" class="fa-solid fa-chart-area"></i>
+                <p class="graphic2">Graphic Design</p>
+                <div class="line2"></div>
+                <p class="there2">There are many variations of
+                    passages of <br> but the majority have suffered
+                    alteration in <br> some form.
+
+                </p>
+            </div>
+            <div class="sub21">
+                <i id="cup2" class="fa-solid fa-mug-hot"></i>
+                <p class="color2">Unlimited Color</p>
+                <div class="line21"></div>
+                <p class="there21">There are many variations of
+                    passages of <br> but the majority have suffered
+                    alteration in <br> some form. </p>
+            </div>
+
+            <div class="sub22">
+                <i id="cloud2" class="fa-solid fa-cloud-arrow-up"></i>
+                <p class="media2">Media Marketing</p>
+                <div class="line22"></div>
+                <p class="there22">There are many variations
+                    of passages of but the majority have
+                    suffered alteration in some form.
+                    Unlimited Wifi</p>
+            </div>
+        </div>
+
+        <div class="submain21">
+            <div class="subm2">
+                <i id="wifi2" class="fa-solid fa-images"></i>
+                <p class="unlimited2">Unlimited Wifi </p>
+                <div class="linep2"></div>
+                <p class="are2">There are many variations of
+                    passages of but the majority have suffered
+                    alteration in some form. </p>
+            </div>
+
+            <div class="subm21">
+                <i id="design2" class="fa-solid fa-desktop"></i>
+                <p class="res2">Responsive Design</p>
+                <div class="linep21"></div>
+                <p class="are21">There are many variations
+                    of passages of but the majority have
+                    suffered alteration in some form. </p>
+            </div>
+
+            <div class="subm22">
+                <i id="text2" class="fa-solid fa-file-lines"></i>
+                <p class="easy2">Easy to customize</p>
+                <div class="linep22"></div>
+                <p class="are22">There are many variations of
+                    passages of but the majority have suffered
+                    alteration in some form</p>
+            </div>
+        </div>
+
+        <div class="freelancer2">
+            <P class="free2">I Am Available For Freelancer.</P>
+            <div class="pink2">
+                <p class="free21">Hire ME!</p>
+            </div>
+            <button class="butn61"></button>
+        </div>
+
+        <div class="ourclient2">
+            <p class="ourclient21">Our Client</p>
+            <p class="ourclient22">It is a long established fact
+                that a reader will be of a page when <br> established
+                fact looking at its layout.</p>
+        </div>
+
+        <div class="point2">
+            <i id="fire2" class="fa-solid fa-fire-flame-curved"></i>
+            <div class="fire3">
+                <img class="testi2" src="./testi-1.jpg" alt="">
+            </div>
+            <p class="fire4">The point of using Lorem Ipsim is that
+                it has a more-or-less normal distribution of
+                letters, <br> as opposed to using content here.</p>
+            <p class="ebony2">- Ebony Verty, Envato</p>
+            <div class="pinkline2"></div>
+            <div class="pinkline21"></div>
+            <div class="pinkline22"></div>
+        </div>
+
+        <div class="work2">
+            <p class="work21">Our Works</p>
+            <p class="work22">It is a long established fact that a reader
+                will be of a page when <br> established fact looking at its
+                layout.</p>
+
+        </div>
+
+        <div class="all2">
+            <div class="button2">
+            <button class="butn21">All</button>
+            <button class="butn22">SEO</button>
+            <button class="butn23">WEBDESIGN</button>
+            <button class="butn24">WORK</button>
+            <button class="butn25">WORDPRESS</button>
+                
+            </div>
+
+            <img class="imgp2" src="./1.jpg" alt="">
+            <img class="imgp21" src="./2.jpg" alt="">
+            <img class="imgp22" src="./3.jpg" alt="">
+            <img class="imgp23" src="./4.jpg" alt="">
+            <img class="imgp24" src="./5.jpg" alt="">
+            <img class="imgp25" src="./6.jpg" alt="">
+        </div>
+
+        <div class="blog2">
+            <p class="blog21">Our Blog </p>
+            <p class="blog22">It is a long established fact
+                that a reader will be of a page when established
+                fact looking at its layout.</p>
+        </div>
+
+        <div class="blog3">
+            <img class="blog31" src="./blog-1.jpg" alt="">
+            <img class="blog32" src="./blog-2.jpg" alt="">
+            <img class="blog33" src="./blog-3.jpg" alt="">
+
+            <div class="there3">
+                <p class="there31">There are many variations</p>
+                <p class="there32">11 March 2018</p>
+                <p class="kerri33">By Kerri</p>
+                <p class="sit3">Sit sagittis vulputate laoreet sodales
+                    tortor <br> nulla lobortis bibendum netus primis <br> fames.
+                    Lobortis ultricies.</p>
+                <p class="sit34">Read More...</p>
+
+            </div>
+
+            <div class="sit4">
+                <p class="sit41">Contrary to popular belief</p>
+                <p class="there42">11 March 2018</p>
+                <p class="kerri43">By Kerri</p>
+                <p class="sit44">Sit sagittis vulputate laoreet sodales
+                    tortor <br> nulla lobortis bibendum netus primis <br> fames.
+                    Lobortis ultricies.</p>
+                <p class="sit45">Read More...</p>
+            </div>
+
+            <div class="sit5">
+                <p class="sit51">Contrary to popular belief</p>
+                <p class="there52">11 March 2018</p>
+                <p class="kerri53">By Kerri</p>
+                <p class="sit54">Sit sagittis vulputate laoreet sodales
+                    tortor <br> nulla lobortis bibendum netus primis <br> fames.
+                    Lobortis ultricies.</p>
+                <p class="sit55">Read More...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div class="contact3">
+            <p class="cont3">Contact Us</p>
+            <p class="cont31">It is a long established fact
+                that a reader will be of a page when <br> established
+                fact looking at its layout.</p>
+        </div>
+
+        <div class="call3">
+
+            <div class="call31">
+                <i id="phone3" class="fa-solid fa-mobile-screen-button"></i>
+                <p class="on3">Call Us</p>
+                <p class="on31">985 123 7856</p>
+            </div>
+
+
+            <div class="email3">
+                <i id="msg3" class="fa-solid fa-envelope"></i>
+                <p class="email31">Email Us At</p>
+                <p class="nmbr3">Website.Kerri@gmail.com </p>
+
+            </div>
+
+            <div class="visit3">
+                <i id="loc3" class="fa-solid fa-location-dot"></i>
+                <p class="loc31">Visit Office</p>
+                <p class="loc32">202, Grasselli Street , Conway.</p>
+            </div>
+        </div>
+
+        <div class="name31">
+
+            <!-- <div class="your3">
+                <p class="your31">Your Name...</p>
+            </div> -->
+            <input class="your3" type="text" placeholder="Your Name...">
+
+            <!-- <div class="your32">
+                <p class="your33">Your Email...</p>
+            </div> -->
+
+            <input class="your32" type="text" placeholder="Your Email...">
+
+            <!-- <div class="subject3">
+                <p class="sub3">Your Subject..</p>
+            </div> -->
+
+            <input class="subject3" type="text" placeholder="Your Subject...">
+
+            <!-- <div class="msg31">
+                <p class="msg32">Your Message...</p>
+
+            </div> -->
+
+            <textarea name="Your Message.." id="msg31" cols="30" rows="10" placeholder="Your Message"></textarea>
+            
+             <!-- <input id="msg31" type="text" placeholder="Your Message.."> -->
+           
+             <div class="pinkt3">
+                <p class="send3"> <br> Send Message</p>
+            </div>
+            
+        
+        </div>
+
+    </div>
+
+    <div class="last">
+
+        <div class="icon4">
+
+            <div class="f3">
+                <i id="f31" class="fa-brands fa-facebook-f"></i>
+            </div>
+
+            <div class="in3">
+                <i id="in31" class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <div class="pin3">
+                <i id="pin31" class="fa-brands fa-pinterest-p"></i>
+            </div>
+
+            <div class="twit3">
+                <i id="twit32" class="fa-brands fa-twitter"></i>
+                
+            </div>
+        </div>
+        <div class="fin3">
+        <p class="fin31">2018 - 2021 © Kerri. Design by 
+            SRBThemes.
+
+        </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
